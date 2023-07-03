@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  input: MyString
+  input_type: MyString
+  result: MyString
+  project: one
+
+two:
+  input: MyString
+  input_type: MyString
+  result: MyString
+  project: two

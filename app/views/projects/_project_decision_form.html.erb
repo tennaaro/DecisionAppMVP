@@ -1,0 +1,11 @@
+<div class="nested-form-wrapper" data-new-record="<%= f.object.new_record? %>">
+  <%= f.label :input %>
+  <%= f.text_field :input %>
+
+  <%= f.label :input_type %>
+  <%= f.text_field :input_type %>
+
+  <button type="button" data-action="nested-form#remove">Remove Decision</button>
+
+  <%= f.hidden_field :_destroy %>
+</div>

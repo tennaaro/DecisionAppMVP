@@ -1,0 +1,37 @@
+<%= form_with(model: decision) do |form| %>
+  <% if decision.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(decision.errors.count, "error") %> prohibited this decision from being saved:</h2>
+
+      <ul>
+        <% decision.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :input, style: "display: block" %>
+    <%= form.text_field :input %>
+  </div>
+
+  <div>
+    <%= form.label :input_type, style: "display: block" %>
+    <%= form.text_field :input_type %>
+  </div>
+
+  <div>
+    <%= form.label :result, style: "display: block" %>
+    <%= form.text_field :result %>
+  </div>
+
+  <div>
+    <%= form.label :project_id, style: "display: block" %>
+    <%= form.text_field :project_id %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

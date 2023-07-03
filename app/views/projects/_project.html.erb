@@ -1,0 +1,19 @@
+<div id="<%= dom_id project %>">
+  <p>
+    <strong>Title:</strong>
+    <%= project.title %>
+  </p>
+
+  <p>
+    <strong>Decision:</strong>
+    <ul>
+      <% project.decisions.each do |decision| %>
+        <li>
+          Input: <%= decision.input %>
+          Input Type: <%= decision.input_type %>
+        </li>
+      <% end %>
+    </ul>
+  </p>
+
+</div>

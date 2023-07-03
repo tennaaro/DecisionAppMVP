@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Decisions</h1>
+
+<div id="decisions">
+  <% @decisions.each do |decision| %>
+    <%= render decision %>
+    <p>
+      <%= link_to "Show this decision", decision %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New decision", new_decision_path %>

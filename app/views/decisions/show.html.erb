@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @decision %>
+
+<div>
+  <%= link_to "Edit this decision", edit_decision_path(@decision) %> |
+  <%= link_to "Back to decisions", decisions_path %>
+
+  <%= button_to "Destroy this decision", @decision, method: :delete %>
+</div>
