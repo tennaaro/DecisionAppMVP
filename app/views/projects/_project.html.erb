@@ -1,8 +1,19 @@
 <div id="<%= dom_id project %>">
   <p>
-    <strong>Title:</strong>
+    <strong>Decision Project:</strong>
     <%= project.title %>
   </p>
+
+  <%= form_for @DecisionInputs do |f| %>
+  <% @values.each do |value| %>
+    <div class="form-group">
+      <%= f.label value %>
+      <%= f.text_field value %>
+    </div>
+  <% end %>
+  
+  <%= f.submit "Submit" %>
+<% end %>
 
   <p>
     <strong>Decision:</strong>
